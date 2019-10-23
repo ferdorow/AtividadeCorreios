@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <div>
             <span>
-                <select name="Codigo" id="Codigo">
+                <select name="CodigoServico" id="CodigoServioo">
                     <option value="04014">SEDEX a vista</option>
                     <option value="04065">SEDEX a vista Pagamento na entrega </option>
                     <option value="04510">PAC a vista</option>
@@ -23,62 +23,50 @@
             </span>
         </div>
         <div>
-            <span><input type="text" name="CepOrigem" value="" /></span>
+            <span><input type="text" name="CepOrigem" placeholder="CepOrigem" value="" /></span>
         </div>
         <div>
-            <span><input type="text" name="CepDestino" value="" /></span>
+            <span><input type="text" name="CepDestino" placeholder="CepDestino" value="" /></span>
         </div>
         <div>
-            <span><input type="text" name="Peso" value="" /></span>
+            <span><input type="text" name="Peso" placeholder="Peso" value="" /></span>
         </div>
         <div>
-            <span><input type="text" name="Formato" value="Caixa" /></span>
+            <span><input type="text" name="Formato" placeholder="Formato" value="Caixa" /></span>
         </div>
         <div>
-            <span><input type="text" name="Comprimento" value="" /></span>
+            <span><input type="text" name="Comprimento"  placeholder="Comprimento" value="" /></span>
         </div>
         <div>
-            <span><input type="text" name="Altura" value="" /></span>
+            <span><input type="text" name="Altura" placeholder="Altura" value="" /></span>
         </div>
         <div>
-            <span><input type="text" name="Largura" value="" /></span>
+            <span><input type="text" name="Largura" placeholder="Largura" value="" /></span>
         </div>
         <div>
-            <span>
-                <select id="Select1" name="ValorMaoPropria">
+            <span>                
+                <select id="ValorMaoPropria" name="ValorMaoPropria">
                     <option value="S">Sim</option>
                     <option value="N">Não</option>
                 </select>
             </span>
         </div>
         <div>
+            <span><input type="text" name="ValorDeclarado" placeholder="Valor declarado" value="" /></span>
+        </div>
+        <div>
             <span>
-                <select id="Select2" name="AvisoRecebimento">
-                    <option value="S">Sim</option>
+                <select id="AvisoRecebimento" name="AvisoRecebimento">
+                    <option decimal value="">Sim</option>
                     <option value="N">Não</option>
                 </select>
             </span>
         </div>
         <div>
-            <span>
-                <select id="Select3" name="EntregaDomiciliar">
-                    <option value="S">Sim</option>
-                    <option value="N">Não</option>
-                </select>
-            </span>
-        </div>
-        <div>
-            <span>
-                <select id="Select2" name="Entrega Sabado">
-                    <option value="S">Sim</option>
-                    <option value="N">Não</option>
-                </select>
-            </span>
-        </div>
-        
-        <div>
-            <input id="Button" type="button" value="button" />
-            <div id="divContent">
+            <div>
+                <input id="Button1" type="button" value="button" />
+                <div id="divContent">
+                </div>
             </div>
         </div>
     </div>
