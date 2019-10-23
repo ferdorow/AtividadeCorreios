@@ -2,14 +2,14 @@
     //adiciona uma funçã ao click do botao
     $('#Button1').click(function () {
         var CodigoServico = $('#CodigoServico').val();
-        var CepOrigem = $('input[type="text"]').val();
-        var CepDestino = $('input[type="text"]').val();
-        var Peso = $('input[type="text"]').val();
-        var Formato = $('input[type="text"]').val();
-        var Comprimento = $('input[type="text"]').val();
-        var Altura = $('input[type="text"]').val();
-        var Largura = $('input[type="text"]').val();
-        var Diametro = $('input[type="text"]').val();
+        var CepOrigem = $('input[name="CepOrigem"]').val();
+        var CepDestino = $('input[name="CepDestino"]').val();
+        var Peso = $('input[name="Peso"]').val();
+        var Formato = $('select[name="Formato"]').val();
+        var Comprimento = $('input[name="Comprimento"]').val();
+        var Altura = $('input[name="Altura"]').val();
+        var Largura = $('input[name="Largura"]').val();
+        var Diametro = $('input[name="Diametro"]').val();
         var ValorMaoPropria = $('select[id="ValorMaoPropria"]').val();
         var ValorDeclarado = $('select[id="ValorDeclarado"]').val();
         var AvisoRecebimento = $('select[id="AvisoRecebimento"]').val();
@@ -25,10 +25,10 @@
             "&nVlDiametro=" + Diametro +
             "&sCdMaoPropria=" + ValorMaoPropria +
             "&ValorDeclarado=" + ValorDeclarado +
-            "&sCdAvisoRecebimento=" + AvisoRecebimento;
+            "&sCdAvisoRecebimento=" + AvisoRecebimento + "&StrRetorno=xml&nIndicaCalculo=3";
 
         $.getJSON(url, function (data) {
-            alert(data.cServico.Valor );
+            alert("Valor: " + data.cServico.Valor);
         });
 
     });
