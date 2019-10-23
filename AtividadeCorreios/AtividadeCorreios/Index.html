@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <div>
             <span>
-                <select name="CodigoServico" id="CodigoServioo">
+                <select name="CodigoServico" id="CodigoServico">
                     <option value="04014">SEDEX a vista</option>
                     <option value="04065">SEDEX a vista Pagamento na entrega </option>
                     <option value="04510">PAC a vista</option>
@@ -31,9 +31,10 @@
         <div>
             <span><input type="text" name="Peso" placeholder="Peso" value="" /></span>
         </div>
-        <div>
-            <span><input type="text" name="Formato" placeholder="Formato" value="Caixa" /></span>
-        </div>
+        <select id="Formato" name="Formato" size="1">
+            <option value="1">Caixa/pacote</option>
+            <option value="2">Não</option>
+        </select>
         <div>
             <span><input type="text" name="Comprimento"  placeholder="Comprimento" value="" /></span>
         </div>
@@ -44,7 +45,10 @@
             <span><input type="text" name="Largura" placeholder="Largura" value="" /></span>
         </div>
         <div>
-            <span>                
+            <div>
+                <span><input type="text" name="Diametro" placeholder="Diametro" value="" /></span>
+            </div>
+            <span>
                 <select id="ValorMaoPropria" name="ValorMaoPropria">
                     <option value="S">Sim</option>
                     <option value="N">Não</option>
@@ -52,12 +56,12 @@
             </span>
         </div>
         <div>
-            <span><input type="text" name="ValorDeclarado" placeholder="Valor declarado" value="" /></span>
+            <span><input type="text" id="ValorDeclarado" placeholder="Valor declarado" value="" /></span>
         </div>
         <div>
             <span>
                 <select id="AvisoRecebimento" name="AvisoRecebimento">
-                    <option decimal value="">Sim</option>
+                    <option value="S">Sim</option>
                     <option value="N">Não</option>
                 </select>
             </span>
