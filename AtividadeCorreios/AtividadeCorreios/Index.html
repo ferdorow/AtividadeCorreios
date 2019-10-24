@@ -2,9 +2,123 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="height:100vh; background-image:url('https://images.tcdn.com.br/static_inst/escoladeecommerce/prod/wp-content/uploads/2019/07/greve-dos-correios.jpg');
+    background-size:cover">
+    <div class="row h-100" style="background-color:transparent;">
+        <div class="col-sm-12 h-100 d-table" style="background-color:transparent;">
+            <div class="card card-block d-table-cell align-middle" style="background-color:transparent">
+                <div class="row d-flex justify-content-center">
+                    <div class="card col-md-3" style="background: #ffffffc7;">
+                        <div class="card-header">Sistema de Envio dos Correios</div>
+                        <div>
+                            <div class="col-md-12 card-body">
+                                <div class="row form-group">                                    
+                                    <div class="col-md-12">
+                                        <span>
+                                            <select class="w-100 form-control" name="CodigoServico" id="CodigoServico">
+                                                <option value="04014">SEDEX a vista</option>
+                                                <option value="04065">SEDEX a vista Pagamento na entrega </option>
+                                                <option value="04510">PAC a vista</option>
+                                                <option value="04707">PAC a vista Pagamento na entrega</option>
+                                                <option value="40169">SEDEX 12 a vista e a faturar</option>
+                                                <option value="40215">SEDEX 10 a vista e a faturar</option>
+                                                <option value="40290">SEDEX Hoje Varejo</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span><input type="text" name="CepOrigem" placeholder="CepOrigem" value="" /></span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span><input type="text" name="CepDestino" placeholder="CepDestino" value="" /></span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span><input type="text" name="Peso" placeholder="Peso" value="" /></span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <select id="Formato" name="Formato" size="1">
+                                            <option value="1">Caixa/pacote</option>
+                                            <option value="2">Não</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span><input type="text" name="Comprimento" placeholder="Comprimento" value="" /></span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span><input type="text" name="Altura" placeholder="Altura" value="" /></span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span><input type="text" name="Largura" placeholder="Largura" value="" /></span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div>
+                                            <span><input type="text" name="Diametro" placeholder="Diametro" value="" /></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span>
+                                            <select id="ValorMaoPropria" name="ValorMaoPropria">
+                                                <option value="S">Sim</option>
+                                                <option value="N">Não</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span><input type="text" id="ValorDeclarado" placeholder="Valor declarado" value="" /></span>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <span>
+                                            <select id="AvisoRecebimento" name="AvisoRecebimento">
+                                                <option value="S">Sim</option>
+                                                <option value="N">Não</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input id="Button1" type="button" value="button" />
+                                        <div id="divContent">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/inputmask/inputmask.js"></script>
+    <script src="Scripts/Utils/script.js"></script>
 </body>
 </html>
