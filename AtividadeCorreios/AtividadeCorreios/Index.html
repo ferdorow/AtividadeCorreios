@@ -20,7 +20,7 @@
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <span>
-                                            <select class="w-100 form-control" name="CodigoServico" id="CodigoServico">
+                                            <select class="w-100 form-control" name="nCdServico" id="nCdServico">
                                                 <option value="04014">SEDEX a vista</option>
                                                 <option value="04065">SEDEX a vista Pagamento na entrega </option>
                                                 <option value="04510">PAC a vista</option>
@@ -34,22 +34,22 @@
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <span><input type="text" name="CepOrigem" placeholder="CepOrigem" value="" /></span>
+                                        <span><input type="text" name="sCepOrigem" placeholder="CepOrigem" value="" /></span>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <span><input type="text" name="CepDestino" placeholder="CepDestino" value="" /></span>
+                                        <span><input type="text" name="sCepDestino" placeholder="CepDestino" value="" /></span>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <span><input type="text" name="Peso" placeholder="Peso" value="" /></span>
+                                        <span><input type="text" name="nVlPeso" placeholder="Peso" value="" /></span>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <select id="Formato" name="Formato" size="1">
+                                        <select id="Formato" name="nCdFormato" size="1">
                                             <option value="1">Caixa/pacote</option>
                                             <option value="2">Não</option>
                                         </select>
@@ -57,30 +57,30 @@
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <span><input type="text" name="Comprimento" placeholder="Comprimento" value="" /></span>
+                                        <span><input type="text" name="nVlComprimento" placeholder="Comprimento" value="" /></span>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <span><input type="text" name="Altura" placeholder="Altura" value="" /></span>
+                                        <span><input type="text" name="nVlAltura" placeholder="Altura" value="" /></span>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <span><input type="text" name="Largura" placeholder="Largura" value="" /></span>
+                                        <span><input type="text" name="nVlLargura" placeholder="Largura" value="" /></span>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <div>
-                                            <span><input type="text" name="Diametro" placeholder="Diametro" value="" /></span>
+                                            <span><input type="text" name="nVlDiametro" placeholder="Diametro" value="" /></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <span>
-                                            <select id="ValorMaoPropria" name="ValorMaoPropria">
+                                            <select id="ValorMaoPropria" name="sCdMaoPropria">
                                                 <option value="S">Sim</option>
                                                 <option value="N">Não</option>
                                             </select>
@@ -89,13 +89,13 @@
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <span><input type="text" id="ValorDeclarado" placeholder="Valor declarado" value="" /></span>
+                                        <span><input type="text" id="nVlValorDeclarado" placeholder="Valor declarado" value="" /></span>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <span>
-                                            <select id="AvisoRecebimento" name="AvisoRecebimento">
+                                            <select id="AvisoRecebimento" name="sCdAvisoRecebimento">
                                                 <option value="S">Sim</option>
                                                 <option value="N">Não</option>
                                             </select>
@@ -137,6 +137,11 @@
                     <p name="Valor"></p>
                     <p name="PrazoEntrega"></p>
                     <p name="ValorSemAdicionais"></p>
+                    <p name="ValorMaoPropria"></p>
+                    <p name="ValorAvisoRecebimnento"></p>
+                    <p name="ValorValorDeclarado"></p>
+                    <p name="EntregaDomiciliar"></p>
+                    <p name="EntregaSabado"></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
