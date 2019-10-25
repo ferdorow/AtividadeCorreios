@@ -14,9 +14,9 @@
             <div class="card card-block d-table-cell align-middle" style="background-color:transparent">
                 <div class="row d-flex justify-content-center">
                     <div class="card col-md-3" style="background: #ffffffc7;">
-                        <div class="card-header">Sistema de Envio dos Correios</div>
+                        <div class="card-header">Sistema Correios</div>
                         <div class="col-md-12 card-body">
-                            <form name="formenviar" method="get" send-post="correiosambev">
+                            <form name="formenviar" send-post="correiosambev">
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <span>
@@ -107,12 +107,12 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Retorno:</span>
                                         </div>
-                                        <input type="text" class="form-control" name="StrRetorno" placeholder="Informe informe o tipo de retorno xml" />
+                                        <input type="text" class="form-control" name="StrRetorno" placeholder="xml" />
                                     </div>
                                 </div>
                                 <div>
                                     <div>
-                                        <input id="Button1" name="Inserir" type="button" value="button" data-toggle="modal" data-target="#exampleModal" />
+                                        <input id="Button1" name="Inserir" type="button" class="btn btn-success" value="Consultar" data-toggle="modal" data-target="#exampleModal" />
                                         <div id="divContent">
                                         </div>
                                     </div>
@@ -134,14 +134,14 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p name="Valor"></p>
-                    <p name="PrazoEntrega"></p>
-                    <p name="ValorSemAdicionais"></p>
-                    <p name="ValorMaoPropria"></p>
-                    <p name="ValorAvisoRecebimnento"></p>
-                    <p name="ValorValorDeclarado"></p>
-                    <p name="EntregaDomiciliar"></p>
-                    <p name="EntregaSabado"></p>
+                   Valor: <span name="Valor">loading...</span><br />
+                   Prazo De Entrega: <span name="PrazoEntrega">loading...</span><br />
+                   Valor Sem Adicionais: <span name="ValorSemAdicionais">loading...</span><br />
+                   Valor Mão Própria: <span name="ValorMaoPropria">loading...</span><br />
+                   Valor Aviso de Recebimento: <span name="ValorAvisoRecebimnento">loading...</span><br />
+                   Valor Declarado: <span name="ValorValorDeclarado">loading...</span><br />
+                   Entrega Domiciliar: <span name="EntregaDomiciliar">loading...</span><br />
+                   Entrega Sábado: <span name="EntregaSabado">loading...</span>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
