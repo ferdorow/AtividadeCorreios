@@ -13,7 +13,7 @@
             data = JSON.parse(data);
             //Aqui carregamos as informações automaticamente
             $.each(data.cServico, function (key, value) {
-                $('p[name="{key}"]'.replace("{key}", key)).text(value);
+                $('span[name="{key}"]'.replace("{key}", key)).text(value);
             });
         });
 

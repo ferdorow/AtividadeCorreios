@@ -13,110 +13,144 @@
         <div class="col-sm-12 h-100 d-table" style="background-color:transparent;">
             <div class="card card-block d-table-cell align-middle" style="background-color:transparent">
                 <div class="row d-flex justify-content-center">
-                    <div class="card col-md-3" style="background: #ffffffc7;">
+                    <div class="card col-md-3" style="background: #ffffff87;">
                         <div class="card-header">Sistema de Envio dos Correios</div>
                         <div class="col-md-12 card-body">
-                            <form name="formenviar" method="get" send-post="correiosambev">
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span>
-                                            <select class="w-100 form-control" name="nCdServico" id="nCdServico">
-                                                <option value="04014">SEDEX a vista</option>
-                                                <option value="04065">SEDEX a vista Pagamento na entrega </option>
-                                                <option value="04510">PAC a vista</option>
-                                                <option value="04707">PAC a vista Pagamento na entrega</option>
-                                                <option value="40169">SEDEX 12 a vista e a faturar</option>
-                                                <option value="40215">SEDEX 10 a vista e a faturar</option>
-                                                <option value="40290">SEDEX Hoje Varejo</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span><input type="text" name="sCepOrigem" placeholder="CepOrigem" value="" /></span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span><input type="text" name="sCepDestino" placeholder="CepDestino" value="" /></span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span><input type="text" name="nVlPeso" placeholder="Peso" value="" /></span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <select id="Formato" name="nCdFormato" size="1">
-                                            <option value="1">Caixa/pacote</option>
-                                            <option value="2">Não</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span><input type="text" name="nVlComprimento" placeholder="Comprimento" value="" /></span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span><input type="text" name="nVlAltura" placeholder="Altura" value="" /></span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span><input type="text" name="nVlLargura" placeholder="Largura" value="" /></span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <div>
-                                            <span><input type="text" name="nVlDiametro" placeholder="Diametro" value="" /></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span>
-                                            <select id="ValorMaoPropria" name="sCdMaoPropria">
-                                                <option value="S">Sim</option>
-                                                <option value="N">Não</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span><input type="text" id="nVlValorDeclarado" placeholder="Valor declarado" value="" /></span>
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <span>
-                                            <select id="AvisoRecebimento" name="sCdAvisoRecebimento">
-                                                <option value="S">Sim</option>
-                                                <option value="N">Não</option>
-                                            </select>
-                                        </span>
-                                    </div>
-                                </div>
+                            <form name="formenviar" send-post="correiosambev">
                                 <div class="row">
                                     <div class="input-group mb-3">
+                                        <div class="col-md-12">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Codigo:</span>
+                                                <span>
+                                                    <select class="w-100 form-control" name="nCdServico" id="nCdServico">
+                                                        <option value="04014">SEDEX a vista</option>
+                                                        <option value="04065">SEDEX a vista Pagamento na entrega </option>
+                                                        <option value="04510">PAC a vista</option>
+                                                        <option value="04707">PAC a vista Pagamento na entrega</option>
+                                                        <option value="40169">SEDEX 12 a vista e a faturar</option>
+                                                        <option value="40215">SEDEX 10 a vista e a faturar</option>
+                                                        <option value="40290">SEDEX Hoje Varejo</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Cep ori:</span>
+                                            <input class="w-100 form-control" type="text" name="sCepOrigem" placeholder="CepOrigem" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Cep dest:</span>
+                                            <input class="w-100 form-control" type="text" name="sCepDestino" placeholder="CepDestino" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Peso:   </span>
+                                            <input class="w-100 form-control" type="text" name="nVlPeso" placeholder="Peso" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Tipo</span>
+                                            <select class="w-100 form-control" id="Formato" name="nCdFormato" size="1">
+                                                <option value="1">Caixa/pacote</option>
+                                                <option value="2">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Comprimento</span>
+                                            <input class="w-100 form-control" type="text" name="nVlComprimento" placeholder="Comprimento" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Altura</span>
+                                            <input class="w-100 form-control" type="text" name="nVlAltura" placeholder="Altura" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Largura</span>
+                                            <input class="w-100 form-control" type="text" name="nVlLargura" placeholder="Largura" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Diametro</span>
+                                            <input class="w-100 form-control" type="text" name="nVlDiametro" placeholder="Diametro" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Mao Propria</span>
+                                            <select class="w-100 form-control" id="ValorMaoPropria" name="sCdMaoPropria">
+                                                <option value="S">Sim</option>
+                                                <option value="N">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Valor Declarado</span>
+                                            <input class="w-100 form-control" type="text" id="nVlValorDeclarado" placeholder="Valor declarado" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Valor Aviso</span>
+                                            <select class="w-100 form-control" id="AvisoRecebimento" name="sCdAvisoRecebimento">
+                                                <option value="S">Sim</option>
+                                                <option value="N">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Retorno:</span>
-                                        </div>
-                                        <input type="text" class="form-control" name="StrRetorno" placeholder="Informe informe o tipo de retorno xml" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <input id="Button1" name="Inserir" type="button" value="button" data-toggle="modal" data-target="#exampleModal" />
-                                        <div id="divContent">
+                                            <input type="text" class="form-control" name="StrRetorno" placeholder="Tipo de retorno xml" />
                                         </div>
                                     </div>
                                 </div>
+
+                                        <div>
+                                            <div>
+                                                <input id="Button1" class="form-control btn-success" name="Inserir" type="button" value="button" data-toggle="modal" data-target="#exampleModal" />
+                                                <div id="divContent">
+                                                </div>
+                                            </div>
+                                        </div>
                             </form>
                         </div>
                     </div>
@@ -134,14 +168,14 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p name="Valor"></p>
-                    <p name="PrazoEntrega"></p>
-                    <p name="ValorSemAdicionais"></p>
-                    <p name="ValorMaoPropria"></p>
-                    <p name="ValorAvisoRecebimnento"></p>
-                    <p name="ValorValorDeclarado"></p>
-                    <p name="EntregaDomiciliar"></p>
-                    <p name="EntregaSabado"></p>
+                    Valor: <span name="Valor">carregando...</span><br />
+                    Prazo de Entrega: <span name="PrazoEntrega">carregando</span><br />
+                    Valor sem Adicionais: <span name="ValorSemAdicionais">carregando</span><br />
+                    Valor Entrega em Mãos: <span name="ValorMaoPropria">carregando</span><br />
+                    Valor Aviso Recebimento: <span name="ValorAvisoRecebimnento">carregando</span><br />
+                    Valor Declarado: <span name="ValorValorDeclarado">carregando</span><br />
+                    Entrega Domiciliar: <span name="EntregaDomiciliar">carregando</span><br />
+                    Entrega Sabado: <span name="EntregaSabado"></span><br />
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
