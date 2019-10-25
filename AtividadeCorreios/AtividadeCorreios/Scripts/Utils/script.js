@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     //adiciona uma função ao click do botao
-    $('#Button1').click(function () {
+    $('input[name="Inserir"]').click(function () {
         //obter as informações dos meus campos
         //Obtemos as informações do nosso formulario web completo
         var informacoes = $('form[name="formenviar"]').serializeArray();
